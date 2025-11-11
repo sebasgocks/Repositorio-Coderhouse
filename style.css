@@ -1,0 +1,93 @@
+*{
+margin: 0;
+padding: 0;
+}
+/* Fuente Montserrat*/
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+/* font-family: "Montserrat", sans-serif; */
+
+/* fuente Overpass */
+@import url('https://fonts.googleapis.com/css2?family=Overpass:ital,wght@0,100..900;1,100..900&display=swap');
+/* font-family: "Overpass", sans-serif; */
+
+/* Fuente Lato */
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
+/* font-family: "Lato", sans-serif; */
+
+/* Fuente Inter */
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+/* font-family: "Inter", sans-serif; */
+
+/* fuente Jossefin sans */
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap');
+ /* font-family: "Josefin Sans", sans-serif; */
+
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 30px;
+}
+header a{
+    text-decoration: none;
+}
+h1 {
+font-family: "Montserrat", sans-serif;
+margin: 10px;
+padding: 10px;
+color: black;
+}
+
+h2,h3{
+    font-family: "Overpass", sans-serif;
+}
+.Cines{
+    font-family: "Josefin Sans", sans-serif;
+}
+p{
+    font-family: "Lato", sans-serif;
+}
+nav{
+    font-family: "Inter", sans-serif;
+    margin: 10px;
+}
+
+nav ul{
+    display: flex;
+    gap: 10px;
+}
+.navlist{
+    list-style: none;
+    font-size: 20px;
+    padding: 3px;
+}
+
+.linknav{
+    text-decoration: none;
+    color: black;
+}
+.T-Boleteria{
+    font-weight: bold;
+    font-size: 15px;
+}
+
+.boton{
+    display: inline-block;
+    margin: 8px;
+    padding: 5px;
+    border: 2px solid black;
+    border-radius: 8px;
+    text-decoration: none;
+    color: whitesmoke;
+    background-color: black;
+    font-family: "Overpass", sans-serif;
+}
+
+.Logocine{
+   width: 40px ;
+}
+
+.TituloFooter{
+    font-family: "Montserrat", sans-serif;
+    font-size: 15px;
+}
