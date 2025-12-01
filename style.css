@@ -200,7 +200,7 @@ p {
 }
 
 .card-body .btn-custom {
-    margin-top: auto; /* Esto empuja el botón hacia abajo */
+    margin-top: auto; 
 }
 
 /*                           FOOTER                                */
