@@ -5,114 +5,143 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
-    <link rel="stylesheet" href="../style.css">
+    <link rel="stylesheet" href="../styles/style.css">
 </head>
 <body>
 <header>
-    <nav class="navbar navbar-expand-lg bg-nav-propio">
-            <a class="navbar-brand" href="../index.html">
-                <img class="Logocine me-2" src="../assets/53adf522-b401-40c4-adb0-b576ea5edffe (1).png" alt="Logo de CinesPosadas">
-                CinesPosadas
-            </a>
+    <nav class="barra-navegacion navbar navbar-expand-lg">
+        <a class="marca" href="index.html">
+            <img class="logo-cine" src="../assets/53adf522-b401-40c4-adb0-b576ea5edffe (1).png" alt="Logo CinesPosadas">
+            CinesPosadas
+        </a>
 
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
-                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menuNav">
+            <span class="navbar-toggler-icon"></span>
+        </button>
 
-            <div class="collapse navbar-collapse " id="navbarNav">
-                <ul class="navbar-nav ms-auto">
-                    <li class="nav-item"><a class="nav-link" aria-current="page" href="../index.html">Inicio</a></li>
-                    <li class="nav-item"><a class="nav-link" href="Cines.html">Cines</a></li>
-                    <li class="nav-item"><a class="nav-link" href="Boleteria.html">Boletería</a></li>
-                    <li class="nav-item"><a class="nav-link active" href="#">Productos</a></li>
-                    <li class="nav-item"><a class="nav-link" href="Contactos.html">Contacto</a></li>
-                </ul>
-            </div>
-        </nav>
+        <div class="collapse navbar-collapse" >
+            <ul class="menu ms-auto">
+                <li><a href="../index.html">Inicio</a></li>
+                <li><a href="Cines.html">Cines</a></li>
+                <li><a href="Boleteria.html">Boletería</a></li>
+                <li><a class="link-activo" href="#">Productos</a></li>
+                <li><a href="Contactos.html">Contacto</a></li>
+            </ul>
+        </div>
+    </nav>
 </header>
-<Section>
-    <h2 class="Cines">Sunstar Posadas</h2>
+<section class="productos-container">
 
-        <h3>Productos Disponibles</h3>
-        <ul>
-            <li class="navlist">
-                <p>Combos De Pochoclos</p>
-                <img src="/assets/Combo Pochoclos.jpg" alt="Pochoclos">
-            </li>
-            <li class="navlist">
-                <p>Bebidas</p>
-                <img src="/assets/Bebidas.jpg" alt="">
-            </li>
-            <li class="navlist">
-                <p>Golosinas Variadas</p>
-                <img src="/assets/Golosinas.jpg" alt="">
-            </li>
-        </ul>
-</Section>
-<section>
-    <h2 class="Cines">Las Tipas Cinemas</h2>
+    <h1 class="productos-main-title">Menú de Productos</h1>
+    <p class="productos-descripcion">
+        Deliciosos productos que podras encontrar en los cines para disfrutar tu funcion.
+    </p>
 
-        <h3>Productos Disponibles</h3>
-        <ul>
-            <li class="navlist">
-                <p>Combos De Pochoclos</p>
-                <img src="/assets/pochoclos las tipas.jpg" alt="Pochoclos">
-            </li>
-            <li class="navlist">
-                <p>Bebidas</p>
-                <img src="/assets/Bebidas Las tipas.jpg" alt="Bebidas">
-            </li>
-            <li class="navlist">
-                <p>Golosinas Variadas</p>
-                <img src="/assets/Golosinas Las tipas.jpg" alt="Golosinas">
-            </li>
-        </ul>
+    <h2 class="cine-nombre">Sunstar Posadas</h2>
+
+    <div class="productos-grid">
+
+        <div class="product-card">
+            <img src="../assets/Combo Pochoclos.jpg" class="product-img" alt="Pochoclos">
+            <h4 class="product-title">Combos de Pochoclos</h4>
+            <p class="product-sub">Variedad de tamaños y opciones saladas/dulces.</p>
+        </div>
+
+        <div class="product-card">
+            <img src="../assets/Bebidas.jpg" class="product-img" alt="Bebidas">
+            <h4 class="product-title">Bebidas Refrescantes</h4>
+            <p class="product-sub">Gaseosas, jugos y agua mineral fría.</p>
+        </div>
+
+        <div class="product-card">
+            <img src="../assets/Golosinas.jpg" class="product-img" alt="Golosinas">
+            <h4 class="product-title">Golosinas Variadas</h4>
+            <p class="product-sub">Chocolates, caramelos y snacks salados.</p>
+        </div>
+
+    </div>
 </section>
-<section>
-    <h2 class="Cines">Imax Del Conocimiento</h2>
 
-        <h3>Productos Disponibles</h3>
-        <ul>
-            <li class="navlist">
-                <p>Combos De Pochoclos</p>
-                <img src="/assets/pochoclos Imax.jpg" alt="Pochoclos">
-            </li>
-            <li class="navlist">
-                <p>Bebidas</p>
-                <img src="/assets/Bebidas Imax.jpg" alt="">
-            </li>
-            <li class="navlist">
-                <p>Golosinas Variadas</p>
-                <img src="/assets/Golosinas Imax.jpg" alt="">
-            </li>
-        </ul>
+
+<section class="productos-container">
+
+    <h2 class="cine-nombre">Las Tipas Cinemas</h2>
+
+    <div class="productos-grid">
+
+        <div class="product-card">
+            <img src="../assets/pochoclos las tipas.jpg" class="product-img" alt="Pochoclos">
+            <h4 class="product-title">Combos de Pochoclos</h4>
+            <p class="product-sub">Variedad de tamaños y opciones saladas/dulces.</p>
+        </div>
+
+        <div class="product-card">
+            <img src="../assets/Bebidas Las tipas.jpg" class="product-img" alt="Bebidas">
+            <h4 class="product-title">Bebidas Refrescantes</h4>
+            <p class="product-sub">Gaseosas, jugos y agua mineral fría.</p>
+        </div>
+
+        <div class="product-card">
+            <img src="../assets/Golosinas Las tipas.jpg" class="product-img" alt="Golosinas">
+            <h4 class="product-title">Golosinas Variadas</h4>
+            <p class="product-sub">Chocolates, caramelos y snacks salados.</p>
+        </div>
+
+    </div>
 </section>
+
+<section class="productos-container">
+
+    <h2 class="cine-nombre">IMAX del Conocimiento</h2>
+
+    <div class="productos-grid">
+
+        <div class="product-card">
+            <img src="../assets/pochoclos Imax.jpg" class="product-img" alt="Pochoclos">
+            <h4 class="product-title">Combos de Pochoclos</h4>
+            <p class="product-sub">Variedad de tamaños y opciones saladas/dulces.</p>
+        </div>
+
+        <div class="product-card">
+            <img src="../assets/Bebidas Imax.jpg" class="product-img" alt="Bebidas">
+            <h4 class="product-title">Bebidas Refrescantes</h4>
+            <p class="product-sub">Gaseosas, jugos y agua mineral fría.</p>
+        </div>
+
+        <div class="product-card">
+            <img src="../assets/Golosinas Imax.jpg" class="product-img" alt="Golosinas">
+            <h4 class="product-title">Golosinas Variadas</h4>
+            <p class="product-sub">Chocolates, caramelos y snacks salados.</p>
+        </div>
+
+    </div>
+</section>
+
 <footer>
-    <div class="footer-top">
-        <div class="footer-section">
+    <div class="footer-arriba">
+        <div class="footer-bloque">
             <h4>Información de Contacto</h4>
             <p>Dirección: Av. Principal 1234, Posadas.</p>
             <p>Teléfono: (0376) 444-5555</p>
         </div>
 
-        <div class="footer-section">
+        <div class="footer-bloque">
             <h4>Enlaces Rápidos</h4>
-            <ul class="footer-links">
+            <ul class="footer-enlaces">
                 <li><a href="#">Comprar Entradas</a></li>
                 <li><a href="#">Nuestros Cines</a></li>
                 <li><a href="#">Trabaja con Nosotros</a></li>
             </ul>
         </div>
 
-        <div class="footer-section">
+        <div class="footer-bloque">
             <h4>Síguenos</h4>
             <p>Redes sociales (íconos aquí)</p>
         </div>
     </div>
 
-    <div class="footer-bottom">
-        <img class="footer-logo" src="./assets/53adf522-b401-40c4-adb0-b576ea5edffe (1).png" alt="CinesPosadas Logo">
+    <div class="footer-abajo">
+        <img class="footer-logo" src="./assets/53adf522-b401-40c4-adb0-b576ea5edffe (1).png" alt="">
         <p>CinesPosadas</p>
         <p>© 2025 CinesPosadas. Todos los derechos reservados.</p>
     </div>

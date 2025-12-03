@@ -1,0 +1,22 @@
+
+$color-fondo: #CFCFDD;
+$color-texto: #000;
+$color-primario: #092945;
+$color-secundario: #34414F;
+$color-acento: #496C80;
+$color-borde: #7E8595;
+
+$fuente-titulos: "Montserrat", sans-serif;
+$fuente-cuerpo: "Lato", sans-serif;
+$fuente-navbar: "Inter", sans-serif;
+$fuente-decorativa: "Josefin Sans", sans-serif;
+
+body {
+    background-color: $color-fondo;
+    color: $color-texto;
+    font-family: $fuente-cuerpo;
+}
+
+.fondo-inicio {
+    background-color: $color-fondo;
+}

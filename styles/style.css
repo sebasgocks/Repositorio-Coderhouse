@@ -1,0 +1,395 @@
+@charset "UTF-8";
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #CFCFDD;
+  color: #000;
+  font-family: "Lato", sans-serif;
+}
+
+.fondo-inicio {
+  background-color: #CFCFDD;
+}
+
+h1, h2, h3, h4 {
+  font-family: "Montserrat", sans-serif;
+  color: #092945;
+}
+
+.texto-decorativo {
+  font-family: "Josefin Sans", sans-serif;
+  font-style: italic;
+  color: #496C80;
+}
+
+.barra-navegacion {
+  background-color: #000;
+  padding: 20px;
+}
+.barra-navegacion .marca {
+  color: white;
+  font-family: "Inter", sans-serif;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+}
+.barra-navegacion .marca .logo-cine {
+  width: 40px;
+  height: 40px;
+  object-fit: contain;
+  margin-right: 8px;
+}
+.barra-navegacion .menu {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+}
+.barra-navegacion .menu a {
+  color: white;
+  text-decoration: none;
+  font-family: "Inter", sans-serif;
+  transition: 0.2s;
+}
+.barra-navegacion .menu a:hover {
+  color: #496C80;
+}
+.barra-navegacion .menu a.link-activo {
+  color: #496C80;
+}
+
+/* Títulos del index */
+.titulo-principal {
+  font-family: "Montserrat", sans-serif;
+  font-size: 48px;
+  font-weight: 700;
+  text-align: center;
+  color: black;
+  margin-bottom: 10px;
+}
+
+.subtitulo-seccion {
+  font-size: 28px;
+  color: #34414F;
+  border-bottom: 2px solid #496C80;
+  padding-bottom: 6px;
+}
+
+.boton-ver {
+  display: inline-block;
+  background-color: #34414F;
+  color: white;
+  padding: 10px 16px;
+  text-align: center;
+  border-radius: 8px;
+  text-decoration: none;
+  font-weight: 600;
+  margin-top: auto;
+  width: 100%;
+  border: 1px solid #34414F;
+  transition: 0.2s ease;
+}
+.boton-ver:hover {
+  background-color: #496C80;
+  border-color: #496C80;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  color: white;
+}
+
+.grid-peliculas {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 24px;
+}
+.grid-peliculas article {
+  height: 100%;
+}
+
+.tarjeta {
+  height: 100%;
+  background-color: white;
+  border-radius: 12px;
+  border: 1px solid #7E8595;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  min-height: 500px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  transition: 0.3s;
+}
+.tarjeta:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.18);
+}
+.tarjeta .imagen-pelicula {
+  width: 100%;
+  height: 300px;
+  object-fit: cover;
+}
+.tarjeta .tarjeta-info {
+  flex: 1;
+  padding: 16px;
+  display: flex;
+  flex-direction: column;
+}
+.tarjeta .tarjeta-info .boton-ver {
+  margin-top: auto;
+}
+
+.cines-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+  gap: 30px;
+  padding: 30px 0;
+}
+
+.titulo-seccion {
+  text-align: center;
+  margin: 25px 25px;
+  padding-top: 50px;
+}
+
+.tarjeta-cine {
+  background: white;
+  border-radius: 12px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+  overflow: hidden;
+  border: 1px solid #7E8595;
+}
+.tarjeta-cine .cine-foto {
+  width: 100%;
+  height: 250px;
+  object-fit: cover;
+}
+.tarjeta-cine .cine-detalle {
+  padding: 20px;
+}
+.tarjeta-cine .cine-detalle h3 {
+  font-size: 24px;
+  margin-bottom: 10px;
+  color: #000;
+}
+.tarjeta-cine .cine-detalle p {
+  margin-bottom: 10px;
+}
+.tarjeta-cine .cine-detalle .cine-mapa {
+  width: 100%;
+  height: 240px;
+  border-radius: 10px;
+  margin: 15px 0;
+  border: none;
+}
+
+footer {
+  background-color: #000;
+  color: white;
+  margin-top: 40px;
+}
+footer .footer-arriba {
+  display: flex;
+  justify-content: space-around;
+  padding: 40px;
+  flex-wrap: wrap;
+}
+footer .footer-arriba .footer-bloque {
+  min-width: 260px;
+}
+footer .footer-arriba .footer-bloque h4 {
+  font-family: "Montserrat", sans-serif;
+  margin-bottom: 8px;
+}
+footer .footer-arriba .footer-bloque a {
+  color: #d4d4d4;
+  text-decoration: none;
+}
+footer .footer-arriba .footer-bloque a:hover {
+  color: white;
+}
+footer .footer-abajo {
+  background-color: #222;
+  padding: 20px;
+  text-align: center;
+}
+footer .footer-abajo .footer-logo {
+  width: 50px;
+  margin-bottom: 10px;
+}
+
+.Title-boleteria {
+  text-align: center;
+  font-size: 38px;
+  margin: 40px 0 10px;
+  color: #000;
+  font-family: "Montserrat", sans-serif;
+}
+
+.boleteria-cine {
+  text-align: center;
+  font-size: 26px;
+  color: #34414F;
+  margin-bottom: 25px;
+  font-family: "Overpass", sans-serif;
+}
+
+.boleteria-container {
+  width: 100%;
+  max-width: 1300px;
+  margin: auto;
+  padding: 0 20px;
+}
+
+.boleteria-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+  gap: 30px;
+  margin-bottom: 50px;
+}
+
+.boleteria-card {
+  background: white;
+  border-radius: 12px;
+  border: 1px solid #7E8595;
+  padding: 25px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.12);
+  transition: 0.25s ease-in-out;
+  display: flex;
+  flex-direction: column;
+}
+.boleteria-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 18px rgba(0, 0, 0, 0.18);
+}
+.boleteria-card .boleteria-title {
+  font-size: 22px;
+  margin-bottom: 15px;
+  font-family: "Montserrat", sans-serif;
+  color: #092945;
+}
+.boleteria-card label {
+  margin-top: 10px;
+  font-weight: 600;
+  font-size: 15px;
+}
+.boleteria-card select {
+  width: 100%;
+  padding: 10px;
+  margin-top: 5px;
+  margin-bottom: 10px;
+  border-radius: 6px;
+  border: 1px solid #7E8595;
+  font-size: 15px;
+}
+.boleteria-card select:focus {
+  outline: none;
+  border-color: #34414F;
+  box-shadow: 0 0 4px rgba(0, 0, 0, 0.1);
+}
+.boleteria-card .stock {
+  font-size: 14px;
+  color: #666;
+  margin-bottom: 12px;
+}
+.boleteria-card:hover {
+  background-color: #34414F;
+  transform: translateY(-2px);
+}
+
+.boleteria-btn {
+  margin-top: auto;
+  padding: 12px;
+  border-radius: 8px;
+  width: 100%;
+  font-weight: 600;
+  background-color: #092945;
+  color: white;
+  border: none;
+  transition: 0.25s;
+}
+
+.productos-container {
+  max-width: 1200px;
+  margin: 40px auto;
+  padding: 0 20px;
+  text-align: center;
+}
+.productos-container .productos-main-title {
+  font-size: 42px;
+  font-family: var(--font-title);
+  color: var(--color-primary-dark);
+  margin-top: 40px;
+  margin-bottom: 10px;
+}
+.productos-container .productos-descripcion {
+  font-size: 18px;
+  font-family: var(--font-text);
+  color: var(--color-primary-base);
+  margin-bottom: 25px;
+}
+.productos-container .cine-nombre {
+  text-align: center;
+  font-family: var(--font-decorative);
+  font-size: 28px;
+  color: var(--color-secondary);
+  margin: 20px 0;
+  padding-bottom: 8px;
+  border-bottom: 2px solid var(--color-tertiary);
+}
+
+.productos-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+  margin-bottom: 40px;
+}
+@media (max-width: 992px) {
+  .productos-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media (max-width: 576px) {
+  .productos-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+.product-card {
+  background: white;
+  border-radius: 12px;
+  padding: 16px;
+  border: 1px solid var(--color-tertiary);
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+  transition: 0.25s ease;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+.product-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
+}
+.product-card .product-img {
+  width: 100%;
+  height: 250px;
+  object-fit: cover;
+  border-radius: 8px;
+  margin-bottom: 12px;
+}
+.product-card .product-title {
+  font-size: 20px;
+  font-family: var(--font-subtitle);
+  margin-bottom: 10px;
+  color: var(--color-primary-base);
+}
+.product-card .product-sub {
+  font-size: 15px;
+  color: gray;
+  font-family: var(--font-text);
+  margin-top: 8px;
+  margin-bottom: 15px;
+}
+
+/*# sourceMappingURL=style.css.map */

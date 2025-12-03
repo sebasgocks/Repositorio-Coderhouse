@@ -1,0 +1,16 @@
+@import "partials/base/reset";
+@import "partials/base/global";
+@import "partials/base/tipografia";
+
+@import "partials/utilities/variables";
+@import "partials/utilities/mixins";
+@import "partials/utilities/extend";
+
+@import "partials/Components/navbar";     
+@import "partials/Components/titles";
+@import "partials/Components/buttons";
+@import "partials/Components/cards-films"; 
+@import "partials/Components/cards-cines"; 
+@import "partials/Components/footer";      
+@import "partials/Components/boleteria";
+@import "partials/Components/cards-productos";

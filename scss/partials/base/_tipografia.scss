@@ -1,0 +1,10 @@
+h1, h2, h3, h4 {
+    font-family: $fuente-titulos;
+    color: $color-primario;
+}
+
+.texto-decorativo {
+    font-family: $fuente-decorativa;
+    font-style: italic;
+    color: $color-acento;
+}

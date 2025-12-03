@@ -1,115 +1,130 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
-    <link rel="stylesheet" href="../style.css">
+    <title>CinesPosadas - Cines</title>
+
+    
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css">
+
+    
+    <link rel="stylesheet" href="../styles/style.css">
+
 </head>
 <body>
+
 <header>
-    <nav class="navbar navbar-expand-lg bg-nav-propio">
-            <a class="navbar-brand" href="../index.html">
-                <img class="Logocine me-2" src="../assets/53adf522-b401-40c4-adb0-b576ea5edffe (1).png" alt="Logo de CinesPosadas">
-                CinesPosadas
-            </a>
+    <nav class="barra-navegacion navbar navbar-expand-lg">
+        <a class="marca" href="index.html">
+            <img class="logo-cine" src="../assets/53adf522-b401-40c4-adb0-b576ea5edffe (1).png" alt="Logo CinesPosadas">
+            CinesPosadas
+        </a>
 
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
-                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menuNav">
+            <span class="navbar-toggler-icon"></span>
+        </button>
 
-            <div class="collapse navbar-collapse " id="navbarNav">
-                <ul class="navbar-nav ms-auto">
-                    <li class="nav-item"><a class="nav-link" aria-current="page" href="../index.html">Inicio</a></li>
-                    <li class="nav-item"><a class="nav-link active" href="#">Cines</a></li>
-                    <li class="nav-item"><a class="nav-link" href="Boleteria.html">Boletería</a></li>
-                    <li class="nav-item"><a class="nav-link" href="Productos.html">Productos</a></li>
-                    <li class="nav-item"><a class="nav-link" href="Contactos.html">Contacto</a></li>
-                </ul>
-            </div>
-        </nav>
+        <div class="collapse navbar-collapse" >
+            <ul class="menu ms-auto">
+                <li><a href="../index.html">Inicio</a></li>
+                <li><a class="link-activo" href="#">Cines</a></li>
+                <li><a href="Boleteria.html">Boletería</a></li>
+                <li><a href="Productos.html">Productos</a></li>
+                <li><a href="Contactos.html">Contacto</a></li>
+            </ul>
+        </div>
+    </nav>
 </header>
-<h2 class="text-center mb-4">Ubicaciones de Nuestros Cines</h2>
 
-<section class="cines-grid">
+<main class="contenedor">
+    <h2 class="titulo-seccion">Ubicaciones de Nuestros Cines</h2>
 
-    <!-- Sunstar -->
-    <div class="cine-card">
-        <img src="../assets/Sunstar.jpg" alt="Sunstar" class="cine-img">
+    <section class="cines-grid">
 
-        <div class="cine-info">
-            <h3 class="Cines">Sunstar Cinemas</h3>
-            <p><strong>Horarios:</strong> Lunes - Domingo | 17hs - 22hs</p>
+        <!-- Sunstar -->
+        <article class="tarjeta-cine">
+            <img src="../assets/Sunstar.jpg" class="cine-foto" alt="Sunstar Cinemas">
 
-            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3543.277704156372!2d-55.89783402477693!3d-27.367041312339534!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9457be34125d2b39%3A0x96a74d49bc98f25d!2sSunstar%20Cinemas%20-%20Posadas!5e0!3m2!1ses-419!2sar!4v1760740066171!5m2!1ses-419!2sar"
-                allowfullscreen="" loading="lazy" class="cine-map"></iframe>
+            <div class="cine-detalle">
+                <h3>Sunstar Cinemas</h3>
+                <p><strong>Horarios:</strong> Lunes a Domingo | 17:00 a 22:00</p>
 
-            <p><strong>Dirección:</strong> Posadas Plaza Shopping, Bolívar 1979, Posadas</p>
-        </div>
-    </div>
+                <iframe class="cine-mapa"
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3543.277704156372!2d-55.89783402477693!3d-27.367041312339534!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9457be34125d2b39%3A0x96a74d49bc98f25d!2sSunstar%20Cinemas%20-%20Posadas!5e0!3m2!1ses-419!2sar!4v1760740066171!5m2!1ses-419!2sar"
+                    allowfullscreen="" loading="lazy">
+                </iframe>
 
-    <!-- Las tipas -->
-    <div class="cine-card">
-        <img src="../assets/Las tipas.png" alt="Las Tipas" class="cine-img">
+                <p><strong>Dirección:</strong> Posadas Plaza Shopping, Bolívar 1979, Posadas</p>
+            </div>
+        </article>
 
-        <div class="cine-info">
-            <h3 class="Cines">Las Tipas Cinemas</h3>
-            <p><strong>Horarios:</strong> Lunes - Domingo | 17hs - 23hs</p>
+        <!-- Las Tipas -->
+        <article class="tarjeta-cine">
+            <img src="../assets/Las tipas.png" class="cine-foto" alt="Las Tipas Cinemas">
 
-            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3542.189312488026!2d-55.92071852364757!3d-27.40102276151813!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9457bf6651c9a313%3A0x8e5966112d3bc209!2sLas%20Tipas%20Cinemas%20Posadas!5e0!3m2!1ses-419!2sar!4v1760741256043!5m2!1ses-419!2sar"
-                allowfullscreen="" loading="lazy" class="cine-map"></iframe>
+            <div class="cine-detalle">
+                <h3>Las Tipas Cinemas</h3>
+                <p><strong>Horarios:</strong> Lunes a Domingo | 17:00 a 23:00</p>
 
-            <p><strong>Dirección:</strong> Paseo Libertad, Av. Tomas Guido 6070, Posadas</p>
-        </div>
-    </div>
+                <iframe class="cine-mapa"
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3542.189312488026!2d-55.92071852364757!3d-27.40102276151813!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9457bf6651c9a313%3A0x8e5966112d3bc209!2sLas%20Tipas%20Cinemas%20Posadas!5e0!3m2!1ses-419!2sar!4v1760741256043!5m2!1ses-419!2sar"
+                    allowfullscreen="" loading="lazy">
+                </iframe>
 
-    <!-- Imax -->
-    <div class="cine-card">
-        <img src="../assets/Imax.png" alt="IMAX" class="cine-img">
+                <p><strong>Dirección:</strong> Paseo Libertad, Av. Tomas Guido 6070, Posadas</p>
+            </div>
+        </article>
 
-        <div class="cine-info">
-            <h3 class="Cines">IMAX del Conocimiento</h3>
-            <p><strong>Horarios:</strong> Lunes - Domingo | 17hs - 23hs</p>
+        <!-- IMAX -->
+        <article class="tarjeta-cine">
+            <img src="../assets/Imax.png" class="cine-foto" alt="IMAX del Conocimiento">
 
-            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3542.373706112847!2d-55.96676752477572!3d-27.39526841353855!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9457bdbc0149a659%3A0x4628c002d0ffdeea!2zSU1BWCDhtIXhtIfKnyDhtIThtI_JtOG0j-G0hMmq4bSNyarhtIfJtOG0m-G0jyAoSU1BWCBkZWwgQ29ub2NpbWllbnRvKQ!5e0!3m2!1ses-419!2sar!4v1760741569263!5m2!1ses-419!2sar"
-                allowfullscreen="" loading="lazy" class="cine-map"></iframe>
+            <div class="cine-detalle">
+                <h3>IMAX del Conocimiento</h3>
+                <p><strong>Horarios:</strong> Lunes a Domingo | 17:00 a 23:00</p>
 
-            <p><strong>Dirección:</strong> Av. Ulises López, RN12, Posadas</p>
-        </div>
-    </div>
+                <iframe class="cine-mapa"
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3542.373706112847!2d-55.96676752477572!3d-27.39526841353855!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9457bdbc0149a659%3A0x4628c002d0ffdeea!2zSU1BWCDhtIXhtIfKnyDhtIThtI_JtOG0j-G0hMmq4bSNyarhtIfJtOG0m-G0jyAoSU1BWCBkZWwgQ29ub2NpbWllbnRvKQ!5e0!3m2!1ses-419!2sar!4v1760741569263!5m2!1ses-419!2sar"
+                    allowfullscreen="" loading="lazy">
+                </iframe>
 
-</section>
+                <p><strong>Dirección:</strong> Av. Ulises López, RN12, Posadas</p>
+            </div>
+        </article>
+
+    </section>
+</main>
 
 <footer>
-    <div class="footer-top">
-        <div class="footer-section">
+    <div class="footer-arriba">
+        <div class="footer-bloque">
             <h4>Información de Contacto</h4>
             <p>Dirección: Av. Principal 1234, Posadas.</p>
             <p>Teléfono: (0376) 444-5555</p>
         </div>
 
-        <div class="footer-section">
+        <div class="footer-bloque">
             <h4>Enlaces Rápidos</h4>
-            <ul class="footer-links">
+            <ul class="footer-enlaces">
                 <li><a href="#">Comprar Entradas</a></li>
                 <li><a href="#">Nuestros Cines</a></li>
                 <li><a href="#">Trabaja con Nosotros</a></li>
             </ul>
         </div>
 
-        <div class="footer-section">
+        <div class="footer-bloque">
             <h4>Síguenos</h4>
             <p>Redes sociales (íconos aquí)</p>
         </div>
     </div>
 
-    <div class="footer-bottom">
-        <img class="footer-logo" src="./assets/53adf522-b401-40c4-adb0-b576ea5edffe (1).png" alt="CinesPosadas Logo">
+    <div class="footer-abajo">
+        <img class="footer-logo" src="./assets/53adf522-b401-40c4-adb0-b576ea5edffe (1).png" alt="">
         <p>CinesPosadas</p>
         <p>© 2025 CinesPosadas. Todos los derechos reservados.</p>
     </div>
 </footer>
+
 </body>
 </html>

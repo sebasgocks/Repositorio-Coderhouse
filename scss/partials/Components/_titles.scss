@@ -1,0 +1,18 @@
+/* Títulos del index */
+
+.titulo-principal {
+    font-family: $font-title;
+    font-size: 48px;
+    font-weight: 700;
+    text-align: center;
+    color: black;
+    margin-bottom: 10px;
+}
+
+
+.subtitulo-seccion {
+    font-size: 28px;
+    color: $color-secundario;
+    border-bottom: 2px solid $color-acento;
+    padding-bottom: 6px;
+}

@@ -1,0 +1,41 @@
+footer {
+    background-color: #000;
+    color: white;
+    margin-top: 40px;
+
+    .footer-arriba {
+        display: flex;
+        justify-content: space-around;
+        padding: 40px;
+        flex-wrap: wrap;
+
+        .footer-bloque {
+            min-width: 260px;
+
+            h4 {
+                font-family: $fuente-titulos;
+                margin-bottom: 8px;
+            }
+
+            a {
+                color: #d4d4d4;
+                text-decoration: none;
+
+                &:hover {
+                    color: white;
+                }
+            }
+        }
+    }
+
+    .footer-abajo {
+        background-color: #222;
+        padding: 20px;
+        text-align: center;
+
+        .footer-logo {
+            width: 50px;
+            margin-bottom: 10px;
+        }
+    }
+}
