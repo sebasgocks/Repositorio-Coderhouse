@@ -3,6 +3,12 @@ h1, h2, h3, h4 {
     color: $color-primario;
 }
 
+$font-title: "Montserrat", sans-serif;
+$font-subtitle: "Overpass", sans-serif;
+$font-text: "Lato", sans-serif;
+$font-navbar: "Inter", sans-serif;
+$font-decorative: "Josefin Sans", sans-serif;
+
 .texto-decorativo {
     font-family: $fuente-decorativa;
     font-style: italic;
