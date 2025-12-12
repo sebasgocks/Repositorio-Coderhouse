@@ -39,3 +39,22 @@
         }
     }
 }
+@media (max-width: 991px) {
+  .barra-navegacion .menu {
+    flex-direction: column;
+    width: 100%;
+    gap: 10px;
+    margin-top: 15px;
+  }
+
+  .barra-navegacion .menu li {
+    width: 100%;
+  }
+
+  .barra-navegacion .menu a {
+    display: block;
+    width: 100%;
+    padding: 10px 0;
+    text-align: center;
+  }
+}
